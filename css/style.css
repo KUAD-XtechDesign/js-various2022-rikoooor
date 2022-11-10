@@ -35,8 +35,8 @@
      top: 42%;
      cursor: pointer;/*マウスカーソルを指マークに*/
      outline: none;/*クリックをしたら出てくる枠線を消す*/
-     border-top: 2px solid #666;/*矢印の色*/
-     border-right: 2px solid #666;/*矢印の色*/
+     border-top: 2px solid rgb(255, 253, 253);/*矢印の色*/
+     border-right: 2px solid rgb(255, 255, 255);/*矢印の色*/
      height: 15px;
      width: 15px;
  }
@@ -73,19 +73,32 @@
      background:#ccc;/*ドットボタンの色*/
  }
  
- .slick-dots .slick-active button{
-     background:#333;/*ドットボタンの現在地表示の色*/
- }
-
+ 
  .sample-box{
     padding-top: 250px;
     padding-bottom: 250px;
     color: rgb(255, 255, 255);
     text-align: center;
     letter-spacing: 5px;
-    font-family: monospace;
+    font-family: ;
     background-color: #054014;
  }
+
+ .slick-dots .slick-active button{
+    background:rgb(255, 255, 255);/*ドットボタンの現在地表示の色*/
+}
+
+.wave{
+position:relative;
+height:200px;/*何も表示されない場合は各波の親要素に高さを持たせましょう。*/
+}
+canvas{
+/* position: absolute; */
+bottom: 0;
+left:0;
+width: 100%;
+} 
+
 
 #content{
     /* position: relative; */
